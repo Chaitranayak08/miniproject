@@ -1,5 +1,6 @@
 :root{
     --pink:#e84398;
+    --orangered:#ff5349;
 }
 
 *{
@@ -20,7 +21,8 @@ html{
 }
 
 section{
-    padding: 2rem ;
+
+     padding:20rem 9%; 
 }
 
 header{
@@ -32,7 +34,7 @@ header{
     align-self: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0.5rem 1rem rgba(0,0, 0, .1);
+    box-shadow: 0 .5rem 1rem rgba(0,0, 0, .1);
 }
 
 header .logo{
@@ -79,8 +81,37 @@ header .fa-bars{
 
 }
 
+.home{
+    display:flex;
+    align-items:center;
+    min-height: 100vh;
+    background: url(website2a.avif) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width:50rem;
+}
 
+.home .content h3{
+    max-width:6rem;
+    color:black;
+    padding: 1rem 0;
+}
 
+.home .content span{
+    max-width:3.5rem;
+    color:var(--orangered);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    max-width:3.5rem;
+    color:rgb(83, 80, 80);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
 
 
 
