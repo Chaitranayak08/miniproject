@@ -1,126 +1,243 @@
-:root{
-    --pink:#e84398;
-    --orangered:#ff5349;
+* {
+    margin: 0;
+    /* /font-family: 'Cinzel Decorative'; */
+    font-family: Roboto;
+    border: border-box;
+}
+/* logo */
+.logo img {
+    min-width: 150px;
+    min-height: 120px;
+    max-width: 130px;
+    max-height: 150px;
+    float: right;
+    padding-left: 10px;
+
+}
+.border {
+    border: 2px solid transparent;
 }
 
-*{
-    margin: 0;padding: 0;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    outline: none;border: none;
-    text-decoration: none;
-    text-transform: capitalize;
-    transition: .2s linear;
+.border:hover {
+    border: 1.5px solid black;
 }
-
-html{
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 6rem;
-    overflow-x: hidden;
+.topbar{
+    width: 100%;
 }
-
-section{
-
-     padding:20rem 9%; 
-}
-
-header{
-    position: fixed;
-    top: 0;left: 0;right: 0;
-    background: #fff;
-    padding: 2rem 9%;
+.top-header {
+    background-color: rgba(165, 54, 46, 0.87);
+    height: 149px;
+    width: 100%;
+    color: white;
     display: flex;
-    align-self: center;
-    justify-content: space-between;
-    z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0,0, 0, .1);
+    align-items: center;
+    justify-content: space-evenly;
 }
-
-header .logo{
-    font-size:3rem;
-    color:#333;
-    font-weight: bolder;
+.location{
+    display: inline-flex;
+    text-decoration: none; 
 }
+.location img{
 
- header .logo span{
-    color:var(--pink);
-} 
-
-header .navbar a{
-    font-size:2rem;
-    padding: 0 1.5rem;
-    color: #666;
+  min-width: 10px;
+min-height: 20px;
+max-width: 20px;
+max-height: 40px;
 }
-
-header .navbar a:hover{
-    color:var(--pink);
-}
-header .icons a{
-    font-size:3rem;
-    color: #333;
-    margin-left: 1.5rem;
-}
-
-header .icons a:hover{
-    color:var(--pink);
-}
-
-header #toggler{
-    display: none;
-}
-
-header .fa-bars{
-    font-size:3rem;
-    color: #333;
-    border-radius: 5rem;
-    padding: .5rem 1.5rem;
-    cursor:pointer;
-    border: .1rem solid rgba(0,0, 0, .3);
-     display: none; 
+.shopping-cart{
+    display: inline-flex;
 
 }
-
-.home{
-    display:flex;
-    align-items:center;
-    min-height: 100vh;
-    background: url(website2a.avif) no-repeat;
-    background-size: cover;
-    background-position: center;
+.shopping-cart img{
+    min-width: 30px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 50px;
 }
-.home .content{
-    max-width:50rem;
+.shopping-cart-text{
+    padding-top: 15%;
 }
 
-.home .content h3{
-    max-width:6rem;
-    color:black;
-    padding: 1rem 0;
+/* 2ND NAV BAR */
+.navbar2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgba(174, 74, 66, 0.8);
+    color: white;
+    font-size: small;
+    height: 45px;
 }
 
-.home .content span{
-    max-width:3.5rem;
-    color:var(--orangered);
-    padding: 1rem 0;
-    line-height: 1.5;
+.navbar2 a {
+    color: white;
+    text-decoration: none;
 }
 
-.home .content p{
-    max-width:3.5rem;
-    color:rgb(83, 80, 80);
-    padding: 1rem 0;
-    line-height: 1.5;
+.navbar2 a:hover {
+    color: black !important;
+}
+
+.second:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+
+/* 2nd nav bar ends */
+
+/* BODY STARTS */
+/* TOP IMG */
+.home {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+}
+
+.hom-text {
+    font-family: "Cinzel ";
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    display: inline-block;
+    justify-content: space-evenly;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* footer starts */
+
+.container {
+    background-color: rgba(165, 54, 46, 1);
+    padding: 58px;
+}
+
+.address {
+    float: left;
+    width: 25%;
+    line-height: 25px;
+    padding-left: 5%;
+}
+
+.address h4 {
+    color: rgba(206, 175, 54, 1);
+    font-size: 16px;
+}
+
+.address ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.address ul li a {
+    font-size: 14px;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.address ul li a:hover {
+    color: rgba(206, 175, 54, 1);
+}
+
+.address ul li {
+    color: white;
+}
+
+.seller {
+    float: left;
+    width: 25%;
+    padding-left: 5%;
+}
+
+.seller h4 {
+    color: rgba(206, 175, 54, 1);
+    font-size: 16px;
+}
+
+.seller ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.seller ul li a {
+    font-size: 14px;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.seller ul li a:hover {
+    color: rgba(206, 175, 54, 1);
+}
+
+.policy {
+    float: left;
+    width: 25%;
+}
+
+.policy h4 {
+    color: rgba(206, 175, 54, 1);
+    font-size: 16px;
+}
+
+.policy ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.policy ul li a {
+    font-size: 14px;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.policy ul li a:hover {
+    color: rgba(206, 175, 54, 1);
+}
+
+.news p {
+    color: white;
+}
+
+.news h4 {
+    color: rgba(206, 175, 54, 1);
+}
+
+.news input button {
+    color: rgba(206, 175, 54, 1);
+    background-color: rgba(206, 175, 54, 1);
+    font-family: "Cinzel Decorative";
+    border: border-box;
+}
+
+/* End of footer */
+
+.logo1 ul li {
+    list-style: none;
+}
+
+.logo1 ul li a i {
+    list-style: none;
+    float: right;
+    padding-right: 25px;
+    margin-right: 35px;
+}
+
+.logo1 p {
+    color: rgba(206, 175, 54, 1);
+    margin-right: 25px;
 }
 
 
-
-
-
-
-
-
-
+/* footer ends */
 
 
 
@@ -132,51 +249,50 @@ header .fa-bars{
 
 
 /* media queries */
-@media (max-width:991px)
-{
-    html{
+@media (max-width:991px) {
+    html {
         font-size: 55%;
-       
+
     }
-    
-    header{
+
+    header {
         padding: 2rem;
     }
 }
 
-@media (max-width:768px)
-{
-header .fa-bars{
-    display: block;
-}
-header .navbar{
-    position: absolute;
-    top: 100%;left: 0;right: 0;
-    background: #eee;
-    border-top: .1rem solid rgba(0,0, 0, .1);
-    clip-path:polygon(0 0,100% 0,100% 0,0 0) ;
-}
-
-header #toggler:checked ~ .navbar{
-   clip-path: polygon(0 0,100% 0,100% 100%,0% 100% );
-}
-header .navbar a{
-    margin: 1.5rem;
-    padding: 1.5rem ;
-    background: #fff;
-    border: 1rem solid rgba(0,0, 0, .1);
-    display: block;
-}
-
-}
-
-@media (max-width:450px)
-{
-    html{
-        font-size: 50%;
-       
+@media (max-width:768px) {
+    header .fa-bars {
+        display: block;
     }
-    
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
 }
 
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
 
+    }
+
+}
