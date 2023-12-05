@@ -6,11 +6,11 @@
 }
 /* logo */
 .logo img {
-    min-width: 150px;
-    min-height: 120px;
-    max-width: 130px;
-    max-height: 150px;
-    float: right;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 80px;
+    max-height: 80px;
+    /* float: right; */
     padding-left: 10px;
 
 }
@@ -94,7 +94,10 @@ max-height: 40px;
     color: white;
     margin-bottom: 0px;
 }
-
+.home img{
+    background-size: cover;
+    height: max-content;
+}
 .hom-text {
     font-family: "Cinzel ";
     color: black;
@@ -103,11 +106,217 @@ max-height: 40px;
     position: absolute;
     display: inline-block;
     justify-content: space-evenly;
-    top: 75%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+/* shipping body of home starts */
 
+.shipping{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+    background-color: #FCFDD1;;
+  
+}
+.shipping img{
+    width: 40%;
+    padding:10% ;
+}
+.shippinga{
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.shipping4a dd{
+    color: #3F464B;
+    font-family: Inter;
+    font-size: small;
+}
+.shippinga dt{
+    font-family: Inter;
+    font-size: large;
+}
+
+/* shipping body of home ends */
+/* 3rd part of home body starts */
+.unique-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.unique-section h2, .unique-section h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.unique-section p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.how-unique{
+    background-color: #FFF8F8;
+    padding-bottom: 2%;
+}
+.how-unique h3{
+    color: #1C3481;
+text-align: center;
+font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 26.4px; 
+padding-top: 3%;
+}
+.how-unique1{
+    display: flex;
+    justify-content: center;
+   padding-top: 6%;
+}
+.how-unique1a{
+    display: flex;
+width: 20%;
+height: 50px;
+padding: 15px 34.771px 15px 35.11px;
+justify-content: center;
+align-items: center;
+gap: 5px;
+flex-shrink: 0;
+background: rgba(165, 54, 46, 0.80);
+color: white;
+border: 1px solid #DDD;
+}
+.how-unique1b{
+    display: flex;
+    width: 20%;
+    height: 50px;
+    padding: 15px 34.771px 15px 35.11px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0; 
+    background-color:white;
+    color: rgba(28, 52, 129, 1);
+    border: 1px solid #DDD;
+}
+.how-unique1c{
+    display: flex;
+    width: 20%;
+    height: 50px;
+    padding: 15px 34.771px 15px 35.11px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+    background-color: rgb(221, 221, 221, 1);
+    border: 1px solid #DDD;
+}
+.hom-seller-img{
+    display: flex;
+    padding-top: 5%;
+}
+.hom-seller-img img{
+    padding-left: 10%;
+    width: 38%;
+}
+.hom-seller-points{
+    width: 35%;
+    padding-left: 10%;
+   
+}
+.hom-seller-points1a{
+    border-radius: 10px;
+border-left: 5px solid #E6E6F2;
+height: 140px;
+background: #FFF;
+display: flex;
+align-items: center;
+box-shadow: 0px 0px 10px 0px rgba(97, 104, 212, 0.17);
+}
+.hom-seller-points1b{
+    border-radius: 10px;
+border-left: 5px solid #E6E6F2;
+background: #FFF;
+display: flex;
+align-items: center;
+height: 140px;
+box-shadow: 0px 0px 10px 0px rgba(97, 104, 212, 0.17);
+}
+.hom-seller-points1c{
+    border-radius: 10px;
+border-left: 5px solid #E6E6F2;
+background: #FFF;
+display: flex;
+align-items: center;
+height: 140px;
+box-shadow: 0px 0px 10px 0px rgba(97, 104, 212, 0.17);
+}
+.hom-seller-points img{
+    padding-right:2.5%;
+}
+.hom-seller-points dt{
+    color: #1C3481;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+padding-bottom: 2%;
+ /* 110% */
+
+}
+.hom-seller-points dd{
+    color: #363636;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+ /* 150% */
+}
+/* 3rd part of home body ends */
+
+/* map section of home starts */
+
+.map{
+    width: 100%;
+    height:80vh;
+    background:rgb(235, 235, 183);
+    display: flex;
+    padding-bottom:3% ;
+}
+.map-text{
+    padding-top: 10%;
+    
+}
+.map-text h4{
+    text-decoration: underline;
+    color:rgb(7, 7, 84);
+font-family: Roboto;
+font-size: xx-large;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 66.667% */
+padding-left: 25%;
+padding-bottom: 5%;
+}
+.map-text p{
+    padding-left: 25%;
+text-align: justify;
+font-family: Roboto;
+font-size: x-large;
+font-style: normal;
+font-weight: 300;
+line-height: 30px; /* 160% */
+width:35%;
+flex-shrink: 0;
+}
+.map iframe{
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom:3% ;
+    
+}
+
+/* map section of home ends */
 /* footer starts */
 
 .container {
