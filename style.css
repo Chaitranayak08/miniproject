@@ -396,6 +396,60 @@ line-height: 150%; /* 21px */
     padding-top:5% ;   
 }
 /* kitchen page ends */
+
+/* stationery page starts */
+.stationery{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2%;
+    background-color: rgba(251, 183, 221, 0.463);;
+  
+}
+.stationery img{
+    width: 40%;
+    padding:10% ;
+}
+.stationerya{
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(251, 183, 221, 0.463);;;
+    padding: 10px;
+    justify-content: space-around;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  /*stationery page ends*/
+  /*electronics page starts*/
+  .how-unique2{
+    display: flex;
+    width: 20%;
+    height: 50px;
+    padding: 15px 34.771px 15px 35.11px;
+    justify-content: left;
+    align-items: left;
+    gap: 5px;
+    flex-shrink: 0; 
+    background-color:white;
+    color: rgba(28, 52, 129, 1);
+    border: 1px solid #DDD;
+}
+.flex-container2{
+    display: flex;
+    flex-wrap:nowrap;
+}
 /* footer starts */
 
 .container {
