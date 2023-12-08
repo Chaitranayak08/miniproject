@@ -389,11 +389,64 @@ line-height: 150%; /* 21px */
     color: #000;
     text-align: center;
     font-family: Cinzel;
-    font-size: 25px;
+    font-size: x-large;
     font-style: normal;
     font-weight: 700;
     line-height: 28.05px; /* 112.2% */
-    padding-top:5% ;   
+       
+}
+.kitchen-shops{
+    background: rgba(190, 87, 45, 0.16);
+}
+.kitchen-shops h4{
+    color: #434A4F;
+font-family: Roboto;
+font-size: x-large;
+font-style: normal;
+font-weight: 500;
+line-height: 18.57px; /* 61.9% */
+text-decoration-line: underline;
+text-transform: capitalize;
+color:rgba(67, 74, 79, 1);
+text-align: center;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+.ki-shops{
+    height:auto ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,auto));
+padding-left: 5%;
+padding-bottom: 8%;
+}
+.kitchen-shop1{
+    border: 1px solid #000;
+background: #FFF;
+width:80%;
+padding-left: 5%;
+justify-content: space-evenly;
+margin-bottom: 5%;
+padding-top: 3%;
+
+}
+.kitchen-shop1 img{
+    width:auto;
+}
+.kitchen-shop1 a{
+    text-decoration: none;
+    color: #000;
+}
+.kitchen-shop1 b{
+    color: #000;
+font-family: Roboto;
+text-decoration: underline;
+}
+.kitchen-shop1 p{
+    display: grid;
+    text-align: left;
+    width: 60%;
+    font-family: Roboto;
+    font-size: large;
 }
 /* kitchen page ends */
 /* footer starts */
