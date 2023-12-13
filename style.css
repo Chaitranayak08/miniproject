@@ -448,6 +448,11 @@ text-decoration: underline;
     font-family: Roboto;
     font-size: large;
 }
+.checked {
+    color: orange;
+
+  }
+  
 /* kitchen page ends */
 
 /* stationery page starts */
@@ -459,7 +464,7 @@ text-decoration: underline;
   
 }
 .stationery img{
-    width: 40%;
+    width: auto;
     padding:10% ;
 }
 .stationerya{
@@ -479,10 +484,17 @@ text-decoration: underline;
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #000;
-    padding: 20px;
-    font-size: 15px;
-    text-align: center;
-    justify-content: space-around;
+    /* padding: 20px; */
+    width: 50%;
+    font-size: large;
+    text-align: left;
+    border: 1px solid #000;
+    background: #FFF;
+    width:80%;
+    padding-left: 5%;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    padding-top: 3%;
   }
   /*stationery page ends*/
   /*electronics page starts*/
@@ -552,6 +564,61 @@ text-decoration: underline;
         font-size: 20px;
         text-align: center;
     }
+
+
+    .ele-container{
+        background: rgba(190, 87, 45, 0.16);
+    }
+    .ele-container h4{
+        color: #434A4F;
+    font-family: Roboto;
+    font-size: x-large;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.57px; /* 61.9% */
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color:rgba(67, 74, 79, 1);
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    }
+.ele-shops{
+    height:auto ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,auto));
+padding-left: 5%;
+padding-bottom: 8%;
+}
+.ele-items{
+    border: 1px solid #000;
+background: #FFF;
+width:80%;
+padding-left: 5%;
+justify-content: space-evenly;
+margin-bottom: 5%;
+padding-top: 3%;
+
+}
+.ele-items img{
+    width:auto;
+}
+.ele-items a{
+    text-decoration: none;
+    color: #000;
+}
+.ele-items b{
+    color: #000;
+font-family: Roboto;
+text-decoration: underline;
+}
+.ele-items p{
+    display: grid;
+    text-align: left;
+    width: 60%;
+    font-family: Roboto;
+    font-size: large;
+}
 
 /* footer starts */
 
