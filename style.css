@@ -515,56 +515,100 @@ text-decoration: underline;
     display: flex;
     flex-wrap:nowrap;
 }
-.grid-container2 {
+.ele-2ndshop{
+    color: #2E2D3F;
+font-family: Roboto;
+font-size: 22px;
+font-style: normal;
+font-weight: 800;
+line-height: 28.8px; /* 120% */
+
+}
+.electronic-container2 {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color:#F3F6F6;
     padding: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 .grid-item1 {
+    display: flex;
+    flex-shrink: 0;
     background-color: #FADEE5;;
     border: 4px;
-    padding: 20px;
-    font-size: 20px;
+    padding-top: 15%;
+    width: auto;
+    font-size:large;
     text-align: center;
     }
     .grid-item2 {
+        display: flex;
+        flex-shrink: 0;
+        width: auto;
         background-color: #FCF8AE;
         border: 4px;
-        padding: 20px;
-        font-size: 20px;
+        padding-top: 15%;
+        font-size: large;
         text-align: center;
     }
     .grid-item3 {
+        display: flex;
+        flex-shrink: 0;
+        width: auto;
         background-color: #D3F6F5;
         border: 4px;
-        padding: 20px;
-        font-size: 20px;
+        padding-top: 15%;
+        font-size: large;
         text-align: center;
     }
     .grid-item4 {
+        display: flex;
+        flex-shrink: 0;
         background-color: #E0ECC8;
         border: 4px;
-        padding: 20px;
-        font-size: 20px;
+        width: auto;
+        padding-top: 15%;
+        font-size: large;
         text-align: center;
     }
     .grid-item5 {
+        display: flex;
+        flex-shrink: 0;
         background-color: #E9E9E9;
+        width: auto;
         border: 4px;
-        padding: 20px;
-        font-size: 20px;
+        padding-top: 15%;
+        font-size: large;
         text-align: center;
     }
     .grid-item6 {
+        display: flex;
+        flex-shrink: 0;
+        width: auto;
         background-color: #ECDDCD;
         border: 4px;
-        padding: 20px;
-        font-size: 20px;
+        padding-top: 15%;
+        font-size: large;
         text-align: center;
     }
-
+.electro-text{
+    font-family: "Cinzel ";
+    color:white;
+    font-size: xx-large;
+    font-weight: 900;
+    position: absolute;
+    display: inline-block;
+    justify-content: space-evenly;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:auto;
+    height:8%;
+    padding-top: 0.8%;
+    flex-shrink: 0;
+    border-radius: 10px;
+background-color:rgb(10, 94, 122);
+}
 
     .ele-container{
         background: rgba(190, 87, 45, 0.16);
@@ -598,6 +642,7 @@ padding-left: 5%;
 justify-content: space-evenly;
 margin-bottom: 5%;
 padding-top: 3%;
+
 
 }
 .ele-items img{
