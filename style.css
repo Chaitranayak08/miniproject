@@ -4,6 +4,10 @@
     font-family: Roboto;
     border: border-box;
 }
+header a{
+    text-decoration: none;
+    color: white;
+}
 /* logo */
 .logo img {
     min-width: 50px;
