@@ -796,13 +796,64 @@ text-decoration: underline;
 
 /* footer ends */
 
+/* supermarket page starts*/
+.super-text{
+    font-family: "Cinzel ";
+    color: white;
+    font-size: x-large;
+    font-weight: 900;
+    position: absolute;
+    display: inline-block;
+    justify-content: space-evenly;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+background: #366b2a;
+width: fit-content;
+min-height: 4%;
+max-height: 8%;
+border: 2px solid black;
+}
+.super-ship{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background: rgba(212, 239, 144, 0.40);
+}
+.super-ship-a{
+    display: flex;
+    background-color: white;
+   
+ 
+}
+.super-ship1{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border: 1px solid #000;
+}
+.supermarket-sale{
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+    padding-top: 6%;
+    padding-bottom: 5%;
+    background: rgba(231, 215, 77, 0.24);
+}
+.supermarket-sale1 img{
+  width: 100%;
+ height: auto;
+ 
+  
+    flex-shrink: 0;
+}
 
 
-
-
-
-
-
+/* supermarket page ends*/
 
 
 /* media queries */
