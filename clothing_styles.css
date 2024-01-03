@@ -130,6 +130,13 @@ gap: 16px;
 border: 1px solid #000;
 background-color:rgb(221, 181, 147);
 width: auto;
+height: 150px;
+}
+.cloth-ship dt,dd{
+    display: grid;
+    text-align: left;
+    width: 150%;
+    
 }
 .home {
     position: relative;
