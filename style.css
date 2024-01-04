@@ -1,8 +1,12 @@
 * {
     margin: 0;
     /* /font-family: 'Cinzel Decorative'; */
-    font-family: Roboto;
+    font-family:Arial, Helvetica, sans-serif;
     border: border-box;
+}
+header a{
+    text-decoration: none;
+    color: white;
 }
 /* logo */
 .logo img {
@@ -75,13 +79,14 @@ max-height: 40px;
 }
 
 .navbar2 a:hover {
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
 }
 
 .second:hover {
-    border: 2px solid black;
-    background-color: white;
-    color: black;
+    background-color: rgba(167, 56, 48, 0.87);
+    color: white;
+    font-size: medium;
+    border-radius: 10px;
 }
 
 /* 2nd nav bar ends */
@@ -94,9 +99,9 @@ max-height: 40px;
     color: white;
     margin-bottom: 0px;
 }
-.home img{
+.home video{
     background-size: cover;
-    height: max-content;
+    height: 50%;
 }
 .hom-text {
     font-family: "Cinzel ";
@@ -109,6 +114,10 @@ max-height: 40px;
     top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: rgb(196, 126, 45);
+    color: white;
+    padding: 1%;
+    border-radius: 10px;
 }
 /* shipping body of home starts */
 
@@ -280,7 +289,7 @@ font-weight: 400;
     width: 100%;
     height:80vh;
     /* background-color: rgb(255, 255, 220); */
-    background-image: url("pexels-victor-santos-325703.jpg");
+    background-image: url("images/pexels-victor-santos-325703.jpg");
     display: flex;
     padding-bottom:3% ;
 }
@@ -323,23 +332,26 @@ flex-shrink: 0;
 /* kitchen page starts */
 .kitchen-text{
     font-family: "Cinzel ";
-    color:white;
+    color: black;
     font-size: xx-large;
     font-weight: 900;
     position: absolute;
     display: inline-block;
     justify-content: space-evenly;
-    top: 90%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 18%;
+    background-color: #A26838;
+    color: white;
+    width: auto;
     height: max-content;
     flex-shrink: 0;
+    padding: 1%;
     border-radius: 10px;
-background-color: #A26838;
+   
 }
 .kitchen-text p{
-    padding-top: 2.5%;
+  
     flex-shrink: 0;
 }
 
@@ -351,6 +363,8 @@ background-color: #A26838;
     justify-content: center;
     padding-top: 5%;
     padding-bottom: 5%;
+    width: auto;
+    
     
 }
 .kit-ship{
@@ -360,9 +374,12 @@ padding: 40px;
 flex-direction: column;
 align-items: flex-start;
 gap: 16px;
+width:auto;
+height: 150px;
 border: 1px solid #000;
 background-color:rgb(221, 181, 147);
-width: auto;
+
+
 }
 
 .kit-ship dd{
@@ -373,7 +390,13 @@ font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 21px */
 }
-
+.kit-ship dt,dd{
+        display: grid;
+        text-align: left;
+        width: 150%;
+   
+    
+}
 .home-essentials{
     display: flex;
     justify-content: space-evenly;
@@ -389,12 +412,70 @@ line-height: 150%; /* 21px */
     color: #000;
     text-align: center;
     font-family: Cinzel;
-    font-size: 25px;
+    font-size: x-large;
     font-style: normal;
     font-weight: 700;
     line-height: 28.05px; /* 112.2% */
-    padding-top:5% ;   
+       
 }
+.kitchen-shops{
+    background: rgba(190, 87, 45, 0.16);
+}
+.kitchen-shops h4{
+    color: #434A4F;
+font-family: Roboto;
+font-size: x-large;
+font-style: normal;
+font-weight: 500;
+line-height: 18.57px; /* 61.9% */
+text-decoration-line: underline;
+text-transform: capitalize;
+color:rgba(67, 74, 79, 1);
+text-align: center;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+.ki-shops{
+    height:auto ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,auto));
+padding-left: 5%;
+padding-bottom: 8%;
+}
+.kitchen-shop1{
+    border: 1px solid #000;
+background: #FFF;
+width:80%;
+padding-left: 5%;
+justify-content: space-evenly;
+margin-bottom: 5%;
+padding-top: 3%;
+
+}
+.kitchen-shop1 img{
+    width:auto;
+}
+.kitchen-shop1 a{
+    text-decoration: none;
+    color: #000;
+}
+.kitchen-shop1 b{
+    color: #000;
+font-family: Roboto;
+text-decoration: underline;
+}
+.kitchen-shop1 p{
+    display: grid;
+    text-align: left;
+    width: 60%;
+    font-family: Roboto;
+    font-size: large;
+}
+.checked {
+    color: orange;
+
+  }
+  
 /* kitchen page ends */
 
 /* stationery page starts */
@@ -405,8 +486,33 @@ line-height: 150%; /* 21px */
     background-color: rgba(251, 183, 221, 0.463);;
   
 }
+.stati img{
+    width: 100%;
+    background-size: cover;
+    height: auto;
+  
+}
+.stationary-text{
+    font-family: "Cinzel ";
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    display: inline-block;
+    justify-content: space-evenly;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(168, 12, 12);
+    color: white;
+    width: auto;
+    height: max-content;
+    flex-shrink: 0;
+    padding: 1%;
+    border-radius: 10px;
+}
 .stationery img{
-    width: 40%;
+    width: auto;
     padding:10% ;
 }
 .stationerya{
@@ -416,6 +522,21 @@ line-height: 150%; /* 21px */
 .flex-container{
     display: flex;
     flex-wrap: wrap;
+ padding-top: 2%;
+ padding-bottom: 3%;
+ background-color: rgb(235, 255,254);
+}
+.flex-container h4{
+    text-decoration: underline;
+    font-size: large;
+    padding-bottom:2%;
+ align-items: center;
+}
+.flex-container img{
+    width: 100%;
+    background-size: cover;
+    
+    
 }
 .grid-container {
     display: grid;
@@ -426,10 +547,17 @@ line-height: 150%; /* 21px */
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid #000;
-    padding: 20px;
-    font-size: 15px;
-    text-align: center;
-    justify-content: space-around;
+    /* padding: 20px; */
+    width: 50%;
+    font-size: large;
+    text-align: left;
+    border: 1px solid #000;
+    background: #FFF;
+    width:80%;
+    padding-left: 5%;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+    padding-top: 3%;
   }
   /*stationery page ends*/
   /*electronics page starts*/
@@ -450,55 +578,155 @@ line-height: 150%; /* 21px */
     display: flex;
     flex-wrap:nowrap;
 }
-.grid-container2 {
+.ele-2ndshop{
+    color: #2E2D3F;
+font-family: Roboto;
+font-size: 22px;
+font-style: normal;
+font-weight: 800;
+line-height: 28.8px; /* 120% */
+
+}
+.electronic-container2 {
     display: grid;
     grid-template-columns: auto auto auto;
     background-color:#F3F6F6;
     padding: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 .grid-item1 {
+    display: flex;
+    flex-shrink: 0;
     background-color: #FADEE5;;
     border: 4px;
-    padding: 20px;
-    font-size: 20px;
+    padding-top: 15%;
+    width: auto;
+    font-size:large;
     text-align: center;
     }
     .grid-item2 {
+        display: flex;
+        flex-shrink: 0;
+        width: auto;
         background-color: #FCF8AE;
         border: 4px;
-        padding: 20px;
-        font-size: 20px;
+        padding-top: 15%;
+        font-size: large;
         text-align: center;
     }
     .grid-item3 {
+        display: flex;
+        flex-shrink: 0;
+        width: auto;
         background-color: #D3F6F5;
         border: 4px;
-        padding: 20px;
-        font-size: 20px;
+        padding-top: 15%;
+        font-size: large;
         text-align: center;
     }
     .grid-item4 {
+        display: flex;
+        flex-shrink: 0;
         background-color: #E0ECC8;
         border: 4px;
-        padding: 20px;
-        font-size: 20px;
+        width: auto;
+        padding-top: 15%;
+        font-size: large;
         text-align: center;
     }
     .grid-item5 {
+        display: flex;
+        flex-shrink: 0;
         background-color: #E9E9E9;
+        width: auto;
         border: 4px;
-        padding: 20px;
-        font-size: 20px;
+        padding-top: 15%;
+        font-size: large;
         text-align: center;
     }
     .grid-item6 {
+        display: flex;
+        flex-shrink: 0;
+        width: auto;
         background-color: #ECDDCD;
         border: 4px;
-        padding: 20px;
-        font-size: 20px;
+        padding-top: 15%;
+        font-size: large;
         text-align: center;
     }
+.electro-text{
+    font-family: "Cinzel ";
+    color:white;
+    font-size: xx-large;
+    font-weight: 900;
+    position: absolute;
+    display: inline-block;
+    justify-content: space-evenly;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:auto;
+    height:8%;
+    padding-top: 0.8%;
+    flex-shrink: 0;
+    border-radius: 10px;
+background-color:rgb(10, 94, 122);
+}
+
+    .ele-container{
+        background: rgba(190, 87, 45, 0.16);
+    }
+    .ele-container h4{
+        color: #434A4F;
+    font-family: Roboto;
+    font-size: x-large;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18.57px; /* 61.9% */
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color:rgba(67, 74, 79, 1);
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    }
+.ele-shops{
+    height:auto ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,auto));
+padding-left: 5%;
+padding-bottom: 8%;
+}
+.ele-items{
+    border: 1px solid #000;
+background: #FFF;
+width:80%;
+padding-left: 5%;
+justify-content: space-evenly;
+margin-bottom: 5%;
+padding-top: 3%;
+
+
+}
+.ele-items img{
+    width:auto;
+}
+.ele-items a{
+    text-decoration: none;
+    color: #000;
+}
+.ele-items b{
+    color: #000;
+font-family: Roboto;
+text-decoration: underline;
+}
+.ele-items p{
+    display: grid;
+    text-align: left;
+    width: 60%;
+    font-family: Roboto;
+    font-size: large;
+}
 
 /* footer starts */
 
@@ -631,13 +859,64 @@ line-height: 150%; /* 21px */
 
 /* footer ends */
 
+/* supermarket page starts*/
+.super-text{
+    font-family: "Cinzel ";
+    color: white;
+    font-size: x-large;
+    font-weight: 900;
+    position: absolute;
+    display: inline-block;
+    justify-content: space-evenly;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+background: #366b2a;
+width: fit-content;
+min-height: 4%;
+max-height: 8%;
+border: 2px solid black;
+padding: 1%;
+}
+.super-ship{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background: rgba(212, 239, 144, 0.40);
+}
+.super-ship-a{
+    display: flex;
+    background-color: white;
+   
+ 
+}
+.super-ship1{
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border: 1px solid #000;
+}
+.supermarket-sale{
+    display: flex;
+    height: auto;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    background: rgba(231, 215, 77, 0.24);
+}
+.supermarket-sale1 img{
+    padding-top: 3%;
+  width: 100%;
+ height: auto;
+    flex-shrink: 0;
+}
 
 
-
-
-
-
-
+/* supermarket page ends*/
 
 
 /* media queries */

@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    /* /font-family: 'Cinzel Decorative'; */
+    font-family: Roboto;
+    border: border-box;
+}
+/* logo */
+.logo img {
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 80px;
+    max-height: 80px;
+    /* float: right; */
+    padding-left: 10px;
+
+}
+.border {
+    border: 2px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid black;
+}
+.topbar{
+    width: 100%;
+}
+.top-header {
+    background-color: rgba(165, 54, 46, 0.87);
+    height: 149px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.location{
+    display: inline-flex;
+    text-decoration: none; 
+}
+.location img{
+
+  min-width: 10px;
+min-height: 20px;
+max-width: 20px;
+max-height: 40px;
+}
+.shopping-cart{
+    display: inline-flex;
+
+}
+.shopping-cart img{
+    min-width: 30px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 50px;
+}
+.shopping-cart-text{
+    padding-top: 15%;
+}
+
+/* 2ND NAV BAR */
+.navbar2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color:rgba(174, 74, 66, 0.8);
+    color: white;
+    font-size: small;
+    height: 45px;
+}
+
+.navbar2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar2 a:hover {
+    color:white !important;
+}
+
+.second:hover {
+    background-color: rgba(167, 56, 48, 0.87);
+    color: white;
+    font-size: medium;
+    border-radius: 10px;
+}
+
+/* 2nd nav bar ends */
+
+
+/* clothing  page starts */
+.clothing-text{
+    font-family: "Cinzel ";
+    color:white;
+    font-size: xx-large;
+    font-weight: 900;
+    position: absolute;
+    display: inline-block;
+    justify-content: space-evenly;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18%;
+    height: max-content;
+    flex-shrink: 0;
+    border-radius: 10px;
+background-color: #A26838;
+}
+.clothing-text p{
+    padding-top: 2.5%;
+    flex-shrink: 0;
+}
+
+
+.clothing-shipping{
+    background-color: white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+.cloth-ship{
+   
+    display: flex;
+padding: 40px;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+border: 1px solid #000;
+background-color:rgb(221, 181, 147);
+width: auto;
+height: 150px;
+}
+.cloth-ship dt,dd{
+    display: grid;
+    text-align: left;
+    width: 150%;
+    
+}
+.home {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+}
+.home-essentials{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(144, 90, 52, 0.32);
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+.home-essentials1 img{
+    width: 90%;
+    height: auto;
+}
+.home-essentials h3{
+    color: #000;
+    text-align: center;
+    font-family: Cinzel;
+    font-size: x-large;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.05px; /* 112.2% */
+}
+.cloth-ship dd{
+    color: #0060DF;
+font-family: Poppins;
+font-size: medium;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+
+.clothing-shops{
+    background: rgba(190, 87, 45, 0.16);
+}
+.clothing-shops h4{
+    color: #434A4F;
+font-family: Roboto;
+font-size: x-large;
+font-style: normal;
+font-weight: 500;
+line-height: 18.57px; /* 61.9% */
+text-decoration-line: underline;
+text-transform: capitalize;
+color:rgba(67, 74, 79, 1);
+text-align: center;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+.cloth-shops{
+    height:auto ;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px,auto));
+padding-left: 5%;
+padding-bottom: 8%;
+}
+.clothing-shop1{
+    border: 1px solid #000;
+background: #FFF;
+width:80%;
+padding-left: 5%;
+justify-content: space-evenly;
+margin-bottom: 5%;
+padding-top: 3%;
+
+}
+.clothing-shop1 img{
+    width:auto;
+}
+.clothing-shop1 a{
+    text-decoration: none;
+    color: #000;
+}
+.clothing-shop1 b{
+    color: #000;
+font-family: Roboto;
+text-decoration: underline;
+}
+.clothing-shop1 p{
+    display: grid;
+    text-align: left;
+    width: 60%;
+    font-family: Roboto;
+    font-size: large;
+}
+.checked {
+    color: orange;
+
+  }
+  
+/* clothing page ends */
+
+
+/* footer starts */
+
+.container {
+    background-color: rgba(165, 54, 46, 1);
+    padding: 58px;
+}
+
+.address {
+    float: left;
+    width: 25%;
+    line-height: 25px;
+    padding-left: 5%;
+}
+
+.address h4 {
+    color: rgba(206, 175, 54, 1);
+    font-size: 16px;
+}
+
+.address ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.address ul li a {
+    font-size: 14px;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.address ul li a:hover {
+    color: rgba(206, 175, 54, 1);
+}
+
+.address ul li {
+    color: white;
+}
+
+.seller {
+    float: left;
+    width: 25%;
+    padding-left: 5%;
+}
+
+.seller h4 {
+    color: rgba(206, 175, 54, 1);
+    font-size: 16px;
+}
+
+.seller ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.seller ul li a {
+    font-size: 14px;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.seller ul li a:hover {
+    color: rgba(206, 175, 54, 1);
+}
+
+.policy {
+    float: left;
+    width: 25%;
+}
+
+.policy h4 {
+    color: rgba(206, 175, 54, 1);
+    font-size: 16px;
+}
+
+.policy ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.policy ul li a {
+    font-size: 14px;
+    line-height: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+.policy ul li a:hover {
+    color: rgba(206, 175, 54, 1);
+}
+
+.news p {
+    color: white;
+}
+
+.news h4 {
+    color: rgba(206, 175, 54, 1);
+}
+
+.news input button {
+    color: rgba(206, 175, 54, 1);
+    background-color: rgba(206, 175, 54, 1);
+    font-family: "Cinzel Decorative";
+    border: border-box;
+}
+
+/* End of footer */
+
+.logo1 ul li {
+    list-style: none;
+}
+
+.logo1 ul li a i {
+    list-style: none;
+    float: right;
+    padding-right: 25px;
+    margin-right: 35px;
+}
+
+.logo1 p {
+    color: rgba(206, 175, 54, 1);
+    margin-right: 25px;
+}
+
+
+/* footer ends */
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+
+    }
+
+    header {
+        padding: 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+
+    }
+
+}
