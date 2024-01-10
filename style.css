@@ -62,6 +62,7 @@ max-height: 40px;
     padding-top: 15%;
 }
 
+
 /* 2ND NAV BAR */
 .navbar2 {
     display: flex;
@@ -531,6 +532,10 @@ text-decoration: underline;
     height: auto;
   
 }
+
+/* .clothing-shop1 button:hover {
+    opacity: 0.7;
+  } */
 .stationary-text{
     font-family: "Cinzel ";
     color: black;
