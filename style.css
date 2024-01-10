@@ -87,7 +87,7 @@ max-height: 40px;
     background-color: rgba(167, 56, 48, 0.87);
     color: white;
     font-size: medium;
-    border-radius: 50px;
+    border-radius: 10px;
 }
 
 /* 2nd nav bar ends */
@@ -1022,4 +1022,16 @@ padding: 1%;
 
     }
 
+}
+
+
+
+
+/* php */
+.error {
+    background:rgb(194, 194, 59);
+    color: #000;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
 }
