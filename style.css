@@ -244,6 +244,14 @@ display: flex;
 align-items: center;
 box-shadow: 0px 0px 10px 0px rgba(97, 104, 212, 0.17);
 }
+.hom-seller-points1a dt{
+    width: 80%;
+    
+}
+.hom-seller-points1a dd{
+    width: 90%;
+    
+}
 .hom-seller-points1b{
     border-radius: 10px;
 border-left: 5px solid #E6E6F2;
@@ -253,6 +261,14 @@ align-items: center;
 height: 140px;
 box-shadow: 0px 0px 10px 0px rgba(97, 104, 212, 0.17);
 }
+.hom-seller-points1b dt{
+    width: 80%;
+    
+}
+.hom-seller-points1b dd{
+    width: 90%;
+    
+}
 .hom-seller-points1c{
     border-radius: 10px;
 border-left: 5px solid #E6E6F2;
@@ -261,6 +277,14 @@ display: flex;
 align-items: center;
 height: 140px;
 box-shadow: 0px 0px 10px 0px rgba(97, 104, 212, 0.17);
+}
+.hom-seller-points1c dt{
+    width: 80%;
+    
+}
+.hom-seller-points1c dd{
+    width: 90%;
+    
 }
 .hom-seller-points img{
     padding-right:2.5%;
@@ -367,6 +391,7 @@ flex-shrink: 0;
     
     
 }
+
 .kit-ship{
    
     display: flex;
@@ -419,7 +444,7 @@ line-height: 150%; /* 21px */
        
 }
 .kitchen-shops{
-    background: rgba(190, 87, 45, 0.16);
+    background: rgba(255, 254, 254, 0.16);
 }
 .kitchen-shops h4{
     color: #434A4F;
@@ -443,14 +468,28 @@ padding-left: 5%;
 padding-bottom: 8%;
 }
 .kitchen-shop1{
-    border: 1px solid #000;
+    border: 0.5px solid #000;
 background: #FFF;
 width:80%;
+height: 90%;
 padding-left: 5%;
 justify-content: space-evenly;
 margin-bottom: 5%;
 padding-top: 3%;
+width: 300px;
+margin: 20px;
+/* border: 1px solid #ddd;   */
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 10px 10px 10px rgba(101, 100, 100, 0.449);
 
+}
+.kitchen-shop1:hover{
+   
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: .2s;
+    
 }
 .kitchen-shop1 img{
     width:auto;
@@ -674,7 +713,7 @@ background-color:rgb(10, 94, 122);
 }
 
     .ele-container{
-        background: rgba(190, 87, 45, 0.16);
+        background: rgba(214, 210, 208, 0.16);
     }
     .ele-container h4{
         color: #434A4F;
@@ -698,15 +737,26 @@ padding-left: 5%;
 padding-bottom: 8%;
 }
 .ele-items{
-    border: 1px solid #000;
+    border: 0.5px solid #000;
 background: #FFF;
 width:80%;
+height: 90%;
 padding-left: 5%;
 justify-content: space-evenly;
 margin-bottom: 5%;
 padding-top: 3%;
+margin: 20px;
+/* border: 1px solid #ddd;   */
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 10px 10px 10px rgba(101, 100, 100, 0.449);
 
 
+}
+.ele-items:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: .2s;
 }
 .ele-items img{
     width:auto;
@@ -927,7 +977,8 @@ padding: 1%;
     }
 
     header {
-        padding: 2rem;
+        padding: 0;
+        flex-shrink: 0;
     }
 }
 

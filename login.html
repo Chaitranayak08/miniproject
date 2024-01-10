@@ -7,14 +7,15 @@
 
   
 <!--  font awesome cdn link -->
-<link rel="icon" href="logo-final1.png">
+<link rel="icon" href="images/logo-final1.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
 <link rel="stylesheet" href=" https://fontawesome.com/">
 <link rel="stylesheet" href="https://fonts.google.com/">
 <!-- custom css file link-->
-<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-<link rel="stylesheet" href="login-style.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="login-style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <style>.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q9KZND01P8"></script>
@@ -32,14 +33,15 @@
 </script>
 <body>
     <!-- head section starts -->
-<header>
+
+   <header>
     <a id="scroll-up" class="button_2" href="javascript:void()" title="Go to Top" style="display: block;"><i class="fa fa-angle-up"></i></a>
         <header class="header main_header stricky_up">
           <div class="topbar">
             <div class="top-header">
                           <div class="col-lg-2 col-md-2 col-xs-6">
                   <div class="logo border">
-                    <a href="home.html" title="Local-"><img src="images/logo-final1.png" alt="Local-E"></a>
+                    <a href="home.html" title="LOCAL-E"><img src="images/logo-final1.png" alt="Local-E"></a>
                   </div>
                 </div>
                 
@@ -50,13 +52,13 @@
                 </div>
                 
                 <div class="col-lg-4 col-md-3  col-lg-pull-4 col-md-pull-5 col-xs-10">
-                  <div class="search-top">
+                  <div class="search-top ">
                     <form method="get" action="home.html/search">
-                      <div id="sw_search" class="search">
-                        <div class="content-search border">
-                          <input class="autosearch-input" type="text" value="" size="50" placeholder="Search by product..." name="search_keyword" id="search_keyword" required="" autocomplete="off" fdprocessedid="rqv00a" style="height: 20%;">	
+                      <div id="sw_search" class="search" >
+                        <div class="content-search">
+                          <input class="autosearch-input border" type="search" value="" size="50" placeholder="Search by product..." name="search_keyword" id="search_keyword" required="" autocomplete="off" fdprocessedid="rqv00a" style="height: 20%;">	
                           <span class="input-group-btn">
-                            <button type="submit" class="fa fa-search button-search-pro form-button" fdprocessedid="usip3"></button>
+                            <button type="submit" class="fa fa-search button-search-pro form-button border" fdprocessedid="usip3"></button>
                           </span>
                           <div class="serachListingHeader"></div>
                         </div>
@@ -73,9 +75,7 @@
             </div>
                 
 
-                <div class="border">
-                  <a href="login.html">Login/Sign-up</a>
-                </div>
+                <div class="border"><a href="login.html">Login/Sign-up</a></div>
                 
                 <div class="shopping-cart border">
                 <img src="images/carts.png" alt="error">
@@ -90,29 +90,30 @@
 
           
           <!-- 2nd navbar starts -->                                                                
-          <div class="navbar2">
-            <div class="home second">
-            <a href="clothing.html"  >CLOTHING</a>
-            </div>
-            <div class="furni second">
-           <a href="supermarket.html">SUPERMARKET</a>
-           </div>
-           <div class="custom second">
-           <a href="kitchen_needs.html" >HOME,KITCHEN AND GARDEN</a>
-           </div>
-           <div class="about second">
-           <a href="electronics.html" >ELECTRONICS</a>
-           </div>
-           <div class="contact second">
-           <a href="stationery.html" >STATIONERY</a>
-           </div>
-           
-           
+         <div class="navbar2">
+          <div class="home second">
+          <a href="clothing.html">CLOTHING</a>
+          </div>
+          <div class="furni second">
+         <a href="supermarket.html">SUPERMARKET</a>
          </div>
+         <div class="custom second">
+         <a href="kitchen_needs.html" >HOME,KITCHEN AND GARDEN</a>
+         </div>
+         <div class="about second">
+         <a href="electronics.html" >ELECTRONICS</a>
+         </div>
+         <div class="contact second">
+         <a href="stationery.html" >STATIONERY</a>
+         </div>
+         
+         
+       </div>
         <!-- 2nd navbar ends -->
           </div>
           </header>
           </header>
+
 
 <!-- header ends -->
 
@@ -133,15 +134,15 @@
                 <i class="bx bx-menu" onclick="myMenuFunction()"></i>
             </div>
         </nav>
-    
+    <div class="form">
     <div class="form-box">
             
             <!------------------- login form -------------------------->
     
-            <div class="login-container" id="login">
-                <div class="top">
+            <div class="login-container" id="login" >
+                <div class="top" >
                     <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
-                    <header>Login</header>
+                    <center><h2 style="color: white; text-decoration: underline; font-size: 30px;">Login</h2> </center>
                 </div>
                 <div class="input-box">
                     <input type="text" class="input-field" placeholder="Username or Email">
@@ -169,7 +170,8 @@
             <div class="register-container" id="register">
                 <div class="top">
                     <span>Have an account? <a href="#" onclick="login()">Login</a></span>
-                    <header>Sign Up</header>
+                    <center><h2 style="color: white; text-decoration: underline; font-size: 30px;">Sign Up</h2> </center>
+
                 </div>
                 <div class="two-forms">
                     <div class="input-box">
@@ -177,6 +179,11 @@
                         <i class="bx bx-user"></i>
                         
                     </div>
+                    &ensp;
+                    &ensp;
+                    &ensp;
+                    &nbsp; 
+                  
                     <div class="input-box">
                         <input type="text" class="input-field" placeholder="Lastname">
                         <i class="bx bx-user"></i>
@@ -203,6 +210,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div> 
     </div>
