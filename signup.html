@@ -8,13 +8,13 @@
   
 <!--  font awesome cdn link -->
 <link rel="icon" href="images/logo-final1.png">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
 <link rel="stylesheet" href=" https://fontawesome.com/">
 <link rel="stylesheet" href="https://fonts.google.com/">
 <!-- custom css file link-->
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="login-style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <style>.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
@@ -33,14 +33,15 @@
 </script>
 <body>
     <!-- head section starts -->
-<header>
+
+   <header>
     <a id="scroll-up" class="button_2" href="javascript:void()" title="Go to Top" style="display: block;"><i class="fa fa-angle-up"></i></a>
         <header class="header main_header stricky_up">
           <div class="topbar">
             <div class="top-header">
                           <div class="col-lg-2 col-md-2 col-xs-6">
                   <div class="logo border">
-                    <a href="home.html" title="Local-E"><img src="images/logo-final1.png" alt="Local-E"></a>
+                    <a href="home.html" title="LOCAL-E"><img src="images/logo-final1.png" alt="Local-E"></a>
                   </div>
                 </div>
                 
@@ -51,13 +52,13 @@
                 </div>
                 
                 <div class="col-lg-4 col-md-3  col-lg-pull-4 col-md-pull-5 col-xs-10">
-                  <div class="search-top">
+                  <div class="search-top ">
                     <form method="get" action="home.html/search">
-                      <div id="sw_search" class="search">
-                        <div class="content-search border">
-                          <input class="autosearch-input" type="text" value="" size="50" placeholder="Search by product..." name="search_keyword" id="search_keyword" required="" autocomplete="off" fdprocessedid="rqv00a" style="height: 20%;">	
+                      <div id="sw_search" class="search" >
+                        <div class="content-search">
+                          <input class="autosearch-input border" type="search" value="" size="50" placeholder="Search by product..." name="search_keyword" id="search_keyword" required="" autocomplete="off" fdprocessedid="rqv00a" style="height: 20%;">	
                           <span class="input-group-btn">
-                            <button type="submit" class="fa fa-search button-search-pro form-button" fdprocessedid="usip3"></button>
+                            <button type="submit" class="fa fa-search button-search-pro form-button border" fdprocessedid="usip3"></button>
                           </span>
                           <div class="serachListingHeader"></div>
                         </div>
@@ -91,7 +92,7 @@
           <!-- 2nd navbar starts -->                                                                
          <div class="navbar2">
           <div class="home second">
-          <a href="clothing.html"  >CLOTHING</a>
+          <a href="clothing.html">CLOTHING</a>
           </div>
           <div class="furni second">
          <a href="supermarket.html">SUPERMARKET</a>
@@ -110,170 +111,139 @@
        </div>
         <!-- 2nd navbar ends -->
           </div>
-          
           </header>
           </header>
 
-          <div class="home">
-            <!-- <img src="images/kitchen-needs.jpg" alt="error" style="width:100% ;  "> -->
-            <video src="videos/home needs_video.mp4" autoplay muted loop style="width: 100%;"></video>
-            <div class="kitchen-text">
-                <p>HOME NEEDS</p>
-    
-            </div>
-          </div>
 
-          <div class="kitchen-shipping">
-            <div class="kit-ship">
-              <img src="images/kitchen-shipping-icon.png" alt="error">
-          <dl>
-            <dt><h3>Free Shipping</h3></dt>
-            <dd>Free shipping with discount</dd>
-          </dl>
-            </div>
+<!-- header ends -->
 
-            <div class="kit-ship">
-              <img src="images/kitchen-support-icon.png" alt="error">
-              <dl>
-                <dt><h3>Great Support</h3></dt>
-                <dd>Instant access to contact</dd>
-              </dl>
+
+<!-- body starts -->
+<!--login details starts-->
+<div class="background-image">
+    <div class="wrapper">
+        <!-- <nav class="nav">
+            <div class="nav-menu" id="navMenu">
+               
             </div>
-          
-          <div class="kit-ship">
-            <img src="images/kitchen-payment.png" alt="error">
-            <dl>
-              <dt><h3>100% Secure Payment</h3></dt>
-              <dd>We ensure your money is save</dd>
-            </dl>
-          </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+            
+        </nav> -->
+   
+          <!------------------- registration form -------------------------->
+          <form action="signup.php" method="POST">
+            <div class="register">
+              <input type="email" class="input-field" placeholder="email" name="email">
+              <input type="text" class="input-field" placeholder="username" name="username">
+               <input type="password" class="input-field" placeholder="password" name="password">
+               <input type="text" class="input-field" placeholder="phone" name="phone">
+
+               
+                <input type="submit" class="submit" value="Register">
+            
+            </div>
+            
+          </form>
+    </div>
+</div>
+            <!------------------- registration form -------------------------->
+            <!-- <div class="register-container" id="register">
+                <div class="top">
+                    <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                    <center><h2 style="color: white; text-decoration: underline; font-size: 30px;">Sign Up</h2> </center>
+
+                </div>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <form action="signup.php" method="POST">
+                        <input type="text" class="input-field" placeholder="username">
+                        <i class="bx bx-user"></i>
+                        
+                    
+                  <br> -->
+                  
+                    <!-- <div class="input-box">
+                        <input type="text" class="input-field" placeholder="email">
+                        <i class="bx bx-user"></i>
+                    </div> -->
+                
+                <!-- <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="email">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Register">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check"> Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Terms & conditions</a></label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div> 
+    </div>
+    <script>
+       
+        function myMenuFunction() {
+         var i = document.getElementById("navMenu");
+     
+         if(i.className === "nav-menu") {
+             i.className += " responsive";
+         } else {
+             i.className = "nav-menu";
+         }
+        }
       
+     </script>
+     
+     <script> -->
+     
+         <!-- var a = document.getElementById("loginBtn");
+         var b = document.getElementById("registerBtn");
+         var x = document.getElementById("login");
+         var y = document.getElementById("register");
+     
+         function login() {
+             x.style.left = "4px";
+             y.style.right = "-520px";
+             a.className += " white-btn";
+             b.className = "btn";
+             x.style.opacity = 1;
+             y.style.opacity = 0;
+         }
+     
+         function register() {
+             x.style.left = "-510px";
+             y.style.right = "5px";
+             a.className = "btn";
+             b.className += " white-btn";
+             x.style.opacity = 0;
+             y.style.opacity = 1;
+         }
+     
+     </script>-->
+    <!--login details ends-->
 
-        <div class="kit-ship">
-          <img src="images/kitchen-money.png" alt="error">
-          <dl>
-            <dt><h3>Money-Back Guarantee</h3></dt>
-            <dd>30 days Money-Back Guarantee</dd>
-          </dl>
-        </div>
-        </div>
-  
-<div class="home-essentials">
-  <div class="home-essentials1">
-    <img src="images/kitchen-home.png" alt="error">
-    <h3>HOME ESSENTIALS</h3>
-  </div>
 
-  <div class="home-essentials1">
-    <img src="images/kitchen-kitchen.png" alt="error">
-    <h3>KITCHEN ESSENTIALS</h3>
-  </div>
 
-  <div class="home-essentials1">
-    <img src="images/kitchen-garden.png" alt="error">
-    <h3>GARDENING TOOLS </h3>
-  </div>
-
-</div>
-
-<!-- shops list starts -->
-<div class="kitchen-shops">
-  <h4>Home,Kitchen and Garden essentials Stores near You</h4>
-  <div class="ki-shops">
-  <div class="kitchen-shop1">
-    <a href="kitchen_products.html" target="_blank">
-    <img src="images/gari home decor.png" alt="error">
-    <p><b>Gari Home Decor</b>
-      5.0
-      (1) · Gift shop
-      14, SH 101
-      Closed ⋅ Opens 9 am Mon</p>
-      </a>
-  </div>
-  <div class="kitchen-shop1">
-    <a href="kitchen_products.html" target="_blank">
-    <img src="images/peace furniture.png" alt="error">
-    <p><b>Peace Furniture House</b>
-      5.0
-      1 floor, vegetable market, opposite dp store
-      Open ⋅ Closes 10 pm · 090601 02626</p>
-      </a>
-  </div>
-  <div class="kitchen-shop1">
-    <a href="kitchen_products.html" target="_blank">
-    <img src="images/somayajji furniture.png" alt="error">
-    <p><b>Somayaji Furnitures</b>
-      4.3
-      (12) · Furniture store
-      V2JG+P54, Bangalore - Mangalore Hwy
-      Closed ⋅ Opens 8:30 am Mon</p>
-      </a>
-  </div>
-  <div class="kitchen-shop1">
-    <a href="kitchen_products.html" target="_blank">
-    <img src="images/master kitchenware.png" alt="error">
-    <p><b>Master Kitchenwares And Gift Center</b>
-      4.8
-      (5) · Appliance store
-      Sulthan Complex, BC Road-Kaikamba
-      Closed ⋅ Opens 9:30 am Mon · 089517 19</p>
-      </a>
-  </div>
-  <div class="kitchen-shop1">
-    <a href="kitchen_products.html" target="_blank">
-    <img src="images/home needs kitchenware.png" alt="error">
-    <p><b>Home Needs Kitchenware</b>
-      5.0
-      (1) · Kitchen supply store
-      R3VC+7CV, Kalladka</p>
-      </a>
-  </div>
-  <div class="kitchen-shop1">
-    <a href="kitchen_products.html" target="_blank">
-    <img src="images/akshay kitchenware.png" alt="error">
-    <p><b>Akshaya Home Needs</b>
-      5.0
-      <!-- <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star checked"></span>
-      <span class="fa fa-star"></span>
-      <span class="fa fa-star"></span>
-       -->
-      4-12/19, New Aradhana Complex, Mangalore to Moodbidre Main road, Thenkayedapadav
-      Closed ⋅ Opens 8:30 am Mon</p>
-      </a>
-  </div>
-  <div class="kitchen-shop1">
-    <a href="kitchen_products.html" target="_blank">
-    <img src="images/vindhya associates.png" alt="error">
-    <p><b>Vindhya Associates - Head office</b> (Kaikamba)
-      4.5
-      #2-T-120/2, Uma Madhav Mansion, Maroli-Kaikamba Junction, NH73
-      Closed ⋅ Opens 8:30 am Mon</p>
-      </a>
-  </div>
-  <div class="kitchen-shop1">
-    <a href="kitchen_products.html" target="_blank">
-    <img src="images/genuine hardware.png" alt="error">
-    <p><b>Genuine Hardwares</b>
-      No reviews · Hardware store
-      Sulthan Complex, BC Road-Kaikamba
-      070264 59444</p>
-      </a>
-  </div>
-  <div class="kitchen-shop1">
-    <a href="kitchen_products.html" target="_blank">
-    <img src="images/million trees nursery.png" alt="error">
-    <p><b>Million trees nursery and hot chips</b>
-      5.0
-      (6) · Plant nursery
-      V2WP+M5P, Bypass Rd
-      Closed ⋅ Opens 8:30 am Mon</p>
-      </a>
-  </div>
-</div>
-</div>
-<!-- shops list ends -->
 
 
 
