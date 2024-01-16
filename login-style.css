@@ -1,10 +1,33 @@
-
+form{
+  padding-left: 10%;
+}
+.login_button{
+    width:100px;
+    height: 50px;
+    position: relative;
+    justify-content: space-around;
+    top:250px;
+   right: 20px;
+     gap: 100px;
+     background: rgb(255, 247, 247);
+     border: none;
+     border-radius: 30px;
+     cursor: pointer;
+     transition: .3s ease;
+}
+.login_button:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.login_button a{
+    text-decoration: none;
+}
 .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: rgba(39, 39, 39, 0.4);
+    padding-bottom: 5%;
 }
 .background-image{
     background-image: url(images/pexels-negative-space-34577.jpg);
@@ -12,8 +35,8 @@
     background-attachment: fixed;
     background-size: 100%;
 }
-.nav{
-    position: absolute;
+/* .nav{
+    position: relative;
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -21,8 +44,8 @@
     height: fit-content;
     line-height: 100px;
     
-}
-
+} */
+/* 
 .nav-button .btn{
     width: 130px;
     height: 40px;
@@ -42,7 +65,7 @@
 }
 .btn:hover{
     background: rgba(255, 255, 255, 0.3);
-}
+} */
 #registerBtn{
     margin-left: 15px;
 }
@@ -52,9 +75,9 @@
 .btn.btn.white-btn:hover{
     background: rgba(255, 255, 255, 0.5);
 }
-.nav-menu-btn{
+/* .nav-menu-btn{
     display: none;
-}
+} */
 .form-box{
     position: relative;
     display: flex;
@@ -102,13 +125,18 @@
     display: flex;
     gap: 10px;
 }
+.sign-register h3{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
 .input-field{
     font-size: 15px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     height: 50px;
     width: 100%;
-    padding: 0 10px 0 45px;
+
     border: none;
     border-radius: 30px;
     outline: none;

@@ -8,6 +8,8 @@ header a{
     text-decoration: none;
     color: white;
 }
+
+
 /* logo */
 .logo img {
     min-width: 50px;
@@ -23,14 +25,14 @@ header a{
 }
 
 .border:hover {
-    border: 1.5px solid black;
+    text-decoration: underline;
 }
 .topbar{
     width: 100%;
 }
 .top-header {
-    background-color: rgba(165, 54, 46, 0.87);
-    height: 149px;
+    background-color: rgba(143, 37, 27, 0.9);
+    height: 110px;
     width: 100%;
     color: white;
     display: flex;
@@ -68,10 +70,11 @@ max-height: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color:rgba(174, 74, 66, 0.8);
+    background-color:rgba(172, 86, 79, 0.8);
     color: white;
     font-size: small;
     height: 45px;
+   
 }
 
 .navbar2 a {
@@ -87,7 +90,9 @@ max-height: 40px;
     background-color: rgba(167, 56, 48, 0.87);
     color: white;
     font-size: medium;
-    border-radius: 10px;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 0.1%;
 }
 
 /* 2nd nav bar ends */

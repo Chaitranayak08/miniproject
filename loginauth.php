@@ -1,82 +1,79 @@
-<!-- 
-
-include('connect.php');
-
-$email=$_POST['email'];
-$password=$_POST['password']; -->
-
-<!-- //sqli injection
-// $email=stripcslashes($email);
-// $password=stripcslashes($password);
-// $email=mysqli_real_escape_string($con,$email);
-// $password = mysqli_real_escape_string($con,$password);
-
-// $sql= "select * from signin where email='$email' and password='$password';";
-
-// $result = mysqli_query($con,$sql);
-// $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-// $count=mysqli_num_rows($result);
-
-// if($count==1)
-// {
-//     echo "Login succesfull";
-//     header("location:home.html");
-// }
-// else{
-//     echo"Login failed!";
-// }
-
-// $con->close(); -->
-
-
 <?php
 
 include('connect.php');
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Check if form is submitted with 'email' and 'password' keys
+if (isset($_POST['email']) && isset($_POST['password']) && !empty($_POST['email']) && !empty($_POST['password'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Hash the password for secure storage and retrieval
-    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    // SQL injection prevention using prepared statements
+    $lowercaseEmail = strtolower($email);
 
-    // Use prepared statements to prevent SQL injection
-    $sql = "select * from signin where email = '$email' and password = '$password';" ;
-    
-    
- $result = mysqli_query($con,$sql);
- $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
- $count=mysqli_num_rows($result);
-//     try {
-//         // $stmt = $con->prepare($sql);
-//         // $stmt->bind_param("s", $email);
-//         // $stmt->execute();
+    // Prepare statement for signup table
+    $stmtSignup = $con->prepare("SELECT * FROM signup WHERE LOWER(email) = LOWER(?)");
 
-//         // $result = $stmt->get_result();
-//         // $row = $result->fetch_assoc();
+    // Check for statement preparation error
+    if (!$stmtSignup) {
+        echo "Error during statement preparation: " . $con->error;
+        exit();
+    }
 
-//         if ($row && password_verify($password, $row['password'])) {
-//             echo "Login successful";
-//             header("Location: home.html");
-//             exit(); // Ensure no further output is sent
-//         } else {
-//             echo "Login failed";
-//         }
+    // Bind parameters for signup table
+    $stmtSignup->bind_param("s", $lowercaseEmail);
 
-//         $stmt->close();
-//     } catch (Exception $e) {
-//         die("Error: " . $e->getMessage());
-//     }
-// }
+    // Execute statement for signup table
+    $stmtSignup->execute();
 
-if($count==1)
- {
-    echo "Login succesfull";
-     header("location:home.html");
- }
- else{
-     echo"Login failed!";
- }
+    // Check for execution error for signup table
+    if ($stmtSignup->error) {
+        echo "Error during statement execution: " . $stmtSignup->error;
+        $stmtSignup->close();
+        $con->close();
+        exit();
+    }
+
+    $resultSignup = $stmtSignup->get_result();
+
+    // Output the SQL query for debugging
+
+    if ($resultSignup->num_rows == 1) {
+        // User found in signup table
+
+        // Fetch user data from signup table
+        $userData = $resultSignup->fetch_assoc();
+
+        // Insert user data into signin table
+        $stmtInsert = $con->prepare("INSERT INTO signin (email, password) VALUES (?, ?)");
+        $stmtInsert->bind_param("ss", $userData['email'], $userData['password']);
+        $stmtInsert->execute();
+
+        if ($stmtInsert->error) {
+            if ($stmtInsert->errno == 1062) {
+                // Duplicate entry (email already exists in signin table)
+                echo "Login failed. Duplicate entry.<br>";
+            } else {
+                // Other error
+                echo "Error during insertion into signin table: " . $stmtInsert->error;
+                $stmtInsert->close();
+                $stmtSignup->close();
+                $con->close();
+                exit();
+            }
+        } else {
+            echo "Login successful and data moved to signin table<br>";
+            header("location: home.html");
+            // exit(); // Ensure script stops here to prevent further output after the header
+        }
+    } else {
+        echo "Login failed. User not found.<br>";
+    }
+
+    $stmtSignup->close();
+} else {
+    echo "Login failed. Email or password not provided.<br>";
 }
+
 $con->close();
+
 ?>

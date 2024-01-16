@@ -17,21 +17,43 @@
         <link rel="stylesheet" href="style.css"> 
         <link rel="stylesheet" href="login-style.css">
         <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <style>
+          form{
+  padding-left: 10%;
+}
+.login_button{
+    width:100px;
+    height: 50px;
+    position: relative;
+    justify-content: space-around;
+    top:220px;
+   right: 20px;
+     gap: 100px;
+     background: rgb(255, 247, 247);
+     border: none;
+     border-radius: 30px;
+     cursor: pointer;
+     transition: .3s ease;
+}
+.login_button:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.login_button a{
+    text-decoration: none;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(39, 39, 39, 0.4);
+    padding-bottom: 5%;
+}
+        </style>
     </head>
-    <style>.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q9KZND01P8"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
     
-      gtag('config', 'G-Q9KZND01P8');
     
-      var lat = '';
-      var long = '';
-    </script>
+     
     <body>
         <!-- head section starts -->
     
@@ -69,14 +91,13 @@
                     </div>
     
                     <div class="location border">
-                    <!-- <a href="javascript:void();" data-toggle="modal" data-target="#location" title="Choose Location"> -->
                       <img src="images/location-pin.png" alt="error">
                     <div class="location-text"><p> Location     </p>   
                      </div>                
                 </div>
                     
     
-                    <div class="border"><a href="login.html">Login/Sign-up</a></div>
+                    <div class="border"><a href="login1.html">Login/Sign-up</a></div>
                     
                     <div class="shopping-cart border">
                     <img src="images/carts.png" alt="error">
@@ -123,42 +144,88 @@
 <div class="background-image">
     <div class="wrapper">
         
-<form action="loginauth.php" method="POST" required>
+
             
                         
                         <!------------------- login form -------------------------->
-                
-                        <div class="login-container" id="login" >
+
+                        
+                        <form method="POST" action="loginauth.php">
+                          <div class="login">
+                          <!-- Your form fields go here -->
+                          <div class="register">
                             <div class="top" >
-                                <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
-                                <center><h2 style="color: white; text-decoration: underline; font-size: 30px;">Login</h2> </center>
-                            </div>
-                            <div class="input-box">
-                                <input type="text" class="input-field" placeholder="Enter your Email" name="email">
-                                <i class="bx bx-user"></i>
-                            </div>
-                            <div class="input-box">
-                                <input type="password" class="input-field" placeholder="Enter your Password" name="password">
-                                <i class="bx bx-lock-alt"></i>
-                            </div>
-                            <div class="input-box">
-                                <input type="submit" class="submit" value="Sign In">
-                            </div>
-                            <div class="two-col">
-                                <div class="one">
-                                    <input type="checkbox" id="login-check">
-                                    <label for="login-check"> Remember Me</label>
-                                </div>
-                                <div class="two">
-                                    <label><a href="#">Forgot password?</a></label>
-                                </div>
-                            </div>
+                              <span>Don't have an account? <a href="signup.html" >Sign Up</a></span>
+                              <center><h2 style="color: white; text-decoration: underline; font-size: 30px;">Login</h2> </center>
+                          </div>
+                          <br>
+                          <input type="email" class="input-field" placeholder="enter email" name="email">
+                          <input type="password" class="input-field" placeholder="enter password" name="password">
+
+                          <input type="submit"  class="submit" value="Submit" >
+                          </div>
+                          </div>
+                      </form>
+                      <button class="login_button" ><a href="login1.html">Sign In</button></a>
+                        <button class="login_button" ><a href="signup.html">Sign Up</button></a>
                         </div>
+                        
                         </div>
-                        </div>
-                        </form>
+                        
                         
                             
-         
-</body>
-</html>
+  
+
+
+<!-- footer starts -->
+<footer>
+  <div class="container">  
+      <div class="address">
+  <h4>ABOUT</h4>
+  <ul>
+      <li></i>&nbsp;&nbsp;<a href="#">Contact us</a></li></li>
+      <li></i>&nbsp;&nbsp;<a href="#">About us</a></li></li>
+      <li></i>&nbsp;&nbsp;<a href="#">Site map</a></li></li>
+  </ul>
+ </div>
+ <div class="seller">
+ <h4>SELLER HELP GUIDE</h4>
+  <ul>
+  <li><a href="#">Seller Registeration</a></li>
+  <li><a href="#">Payments</a></li>
+  <li><a href="#"> Cancellation & Return</a></li>
+  <li><a href="#">FAQ</a></li>
+  <li><a href="#">Report Infringement</a></li>
+ </ul>
+</div>
+<div class="policy">
+  <h4>POLICY</h4>
+   <ul>
+   <li><a href="#">Terms of Use</a></li>
+   <li><a href="#">Security</a></li>
+   <li><a href="#">  Disclaimer</a></li>
+   <li><a href="#"> Privacy</a></li>
+  </ul>
+</div>
+<div class="news">
+  <h4>Join our newsletter</h4><br><br>
+  <p><label>Your email</label><br><br>
+      <input type="email" placeholder=" Enter your email"><br><br>
+  <input type="Button" value="send" name="send" ></p><br>
+
+ </div>
+ <div class="logo1">
+  <p>Our social media</p><br>
+  <ul>
+      <li><a href="#"><i class="fa-brands fa-instagram" style="color: #e9ecf1;"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-twitter" style="color: #fafcff;"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a></li>
+      <li><a href="#"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a></li>
+  </ul>
+ </div>
+ 
+ </div>
+
+</footer>
+<!-- footer ends -->
+</body></html>      

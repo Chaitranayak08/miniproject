@@ -16,21 +16,43 @@
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="login-style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+      form{
+  padding-left: 10%;
+}
+.login_button{
+    width:100px;
+    height: 50px;
+    position: relative;
+    justify-content: space-around;
+    top:250px;
+   right: 20px;
+     gap: 100px;
+     background: rgb(255, 247, 247);
+     border: none;
+     border-radius: 30px;
+     cursor: pointer;
+     transition: .3s ease;
+}
+.login_button:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.login_button a{
+    text-decoration: none;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(39, 39, 39, 0.4);
+    padding-bottom: 5%;
+}
+    </style>
 </head>
 <style>.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q9KZND01P8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag('js', new Date());
+<link rel="stylesheet" href="script.js">
 
-  gtag('config', 'G-Q9KZND01P8');
-
-  var lat = '';
-  var long = '';
-</script>
 <body>
     <!-- head section starts -->
 
@@ -75,7 +97,7 @@
             </div>
                 
 
-                <div class="border"><a href="login.html">Login/Sign-up</a></div>
+                <div class="border"><a href="login1.html">Login/Sign-up</a></div>
                 
                 <div class="shopping-cart border">
                 <img src="images/carts.png" alt="error">
@@ -122,145 +144,41 @@
 <!--login details starts-->
 <div class="background-image">
     <div class="wrapper">
-        <!-- <nav class="nav">
-            <div class="nav-menu" id="navMenu">
-               
-            </div>
-            <div class="nav-button">
-                <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
-                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
-            </div>
-            
-        </nav> -->
+       
    
           <!------------------- registration form -------------------------->
           <form action="signup.php" method="POST">
-            <div class="register">
-              <input type="email" class="input-field" placeholder="email" name="email">
-              <input type="text" class="input-field" placeholder="username" name="username">
-               <input type="password" class="input-field" placeholder="password" name="password">
-               <input type="text" class="input-field" placeholder="phone" name="phone">
+            <div class="sign-register">
+             <div class="top">
+                    <span>Have an account? <a href="login1.html">Login</a></span>
+                    <center><h2 style="color: white; text-decoration: underline; font-size: 30px;">Sign Up</h2> </center>
 
+                </div>
+              <input type="email" class="input-field" placeholder="email" name="email">
+              
+              <input type="text" class="input-field" placeholder="username" name="username">
+              
+               <input type="password" class="input-field" placeholder="password" name="password">
+            
+
+               <input type="text" class="input-field" placeholder="phone" name="phone">
+              
                
                 <input type="submit" class="submit" value="Register">
             
             </div>
             
           </form>
+          <button class="login_button" ><a href="login1.html">Sign In</button></a>
+          <button class="login_button" ><a href="signup.html">Sign Up</button></a>
     </div>
 </div>
-            <!------------------- registration form -------------------------->
-            <!-- <div class="register-container" id="register">
-                <div class="top">
-                    <span>Have an account? <a href="#" onclick="login()">Login</a></span>
-                    <center><h2 style="color: white; text-decoration: underline; font-size: 30px;">Sign Up</h2> </center>
-
-                </div>
-                <div class="two-forms">
-                    <div class="input-box">
-                        <form action="signup.php" method="POST">
-                        <input type="text" class="input-field" placeholder="username">
-                        <i class="bx bx-user"></i>
-                        
-                    
-                  <br> -->
-                  
-                    <!-- <div class="input-box">
-                        <input type="text" class="input-field" placeholder="email">
-                        <i class="bx bx-user"></i>
-                    </div> -->
-                
-                <!-- <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Email">
-                    <i class="bx bx-envelope"></i>
-                </div>
-                <div class="input-box">
-                    <input type="password" class="input-field" placeholder="Password">
-                    <i class="bx bx-lock-alt"></i>
-                </div>
-                <div class="input-box">
-                    <input type="text" class="input-field" placeholder="email">
-                    <i class="bx bx-user"></i>
-                </div>
-                <div class="input-box">
-                    <input type="submit" class="submit" value="Register">
-                </div>
-                <div class="two-col">
-                    <div class="one">
-                        <input type="checkbox" id="register-check">
-                        <label for="register-check"> Remember Me</label>
-                    </div>
-                    <div class="two">
-                        <label><a href="#">Terms & conditions</a></label>
-                    </div>
-                </div>
-            </div>
-        </form>
-        </div>
-        </div>
-    </div> 
-    </div>
-    <script>
-       
-        function myMenuFunction() {
-         var i = document.getElementById("navMenu");
-     
-         if(i.className === "nav-menu") {
-             i.className += " responsive";
-         } else {
-             i.className = "nav-menu";
-         }
-        }
-      
-     </script>
-     
-     <script> -->
-     
-         <!-- var a = document.getElementById("loginBtn");
-         var b = document.getElementById("registerBtn");
-         var x = document.getElementById("login");
-         var y = document.getElementById("register");
-     
-         function login() {
-             x.style.left = "4px";
-             y.style.right = "-520px";
-             a.className += " white-btn";
-             b.className = "btn";
-             x.style.opacity = 1;
-             y.style.opacity = 0;
-         }
-     
-         function register() {
-             x.style.left = "-510px";
-             y.style.right = "5px";
-             a.className = "btn";
-             b.className += " white-btn";
-             x.style.opacity = 0;
-             y.style.opacity = 1;
-         }
-     
-     </script>-->
-    <!--login details ends-->
 
 
+  
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+           
 <!-- footer starts -->
           <footer>
             <div class="container">  
