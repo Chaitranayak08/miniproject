@@ -21,6 +21,7 @@
 </head>
 <style>.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q9KZND01P8"></script>
+<script src="product_search.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -57,7 +58,7 @@
                     <form method="get" action="home.html/search">
                       <div id="sw_search" class="search">
                         <div class="content-search border">
-                          <input class="autosearch-input" type="text" value="" size="50" placeholder="Search by product..." name="search_keyword" id="search_keyword" required="" autocomplete="off" fdprocessedid="rqv00a" style="height: 20%;">	
+                          <input class="autosearch-input" type="text" value="" size="50" placeholder="Search by product..." name="search_keyword" id="search_keyword" required="" autocomplete="off" fdprocessedid="rqv00a" style="height: 20%;"onkeyup="search()">	
                           <span class="input-group-btn">
                             <button type="submit" class="fa fa-search button-search-pro form-button" fdprocessedid="usip3"></button>
                           </span>
@@ -127,8 +128,8 @@
             
 <div class="clothing-shops">
     <h4>Order Online</h4>
-    <div class="cloth-shops">
-    <div class="clothing-shop1">
+    <div class="cloth-shops"id="product-list">
+    <div class="clothing-shop1" >
         <center>
       <img src="https://images.pexels.com/photos/18973701/pexels-photo-18973701/free-photo-of-young-woman-in-a-traditional-pink-saree-dress-posing-outside.jpeg?auto=compress&cs=tinysrgb&w=400" alt="error"></center>
       <h3>BIBA</h3> 

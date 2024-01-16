@@ -90,7 +90,29 @@ max-height: 40px;
 
 /* 2nd nav bar ends */
 
-
+/*carts page */
+.mycart{
+    font-family: "Cinzel ";
+    background-color: rgb(103, 68, 68);
+    color: white;  
+}
+table, th, td{  
+    border: 1px solid black;  
+    width: 50%;
+}  
+th, td {  
+    padding: 10px;  
+}  
+table#alter tr:nth-child(even) {  
+    background-color: #eee;  
+}  
+table#alter tr:nth-child(odd) {  
+    background-color: #fff;  
+}  
+table#alter th {  
+    color: white;  
+    background-color: gray;  
+} 
 /* clothing  page starts */
 .clothing-text{
     font-family: "Cinzel ";
