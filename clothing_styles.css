@@ -21,16 +21,10 @@
     
 }
 
-.border:hover {
-    border: 1.5px solid black;
-}
-.border a{
-    text-decoration: none;
-    color: white;
-}
+
 .topbar{
     width: 100%;
-    font-size: large;
+    font-size: medium;
 }
 .top-header {
     background-color: rgba(165, 54, 46, 0.87);
