@@ -20,6 +20,12 @@ session_start();
 <!-- custom css file link-->
     <link rel="stylesheet" href="clothing_styles.css"> 
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    </style>
 </head>
 <style>.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q9KZND01P8"></script>

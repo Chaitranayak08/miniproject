@@ -21,6 +21,12 @@ session_start();
 <!-- custom css file link-->
     <link rel="stylesheet" href="clothing_styles.css"> 
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+      a{
+        color: white;
+        text-decoration: none;
+      }
+    </style>
 </head>
 <style>.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q9KZND01P8"></script>
@@ -45,7 +51,7 @@ session_start();
             <div class="top-header">
                           <div class="col-lg-2 col-md-2 col-xs-6">
                   <div class="logo border">
-                    <a href="home.html" title="Local-"><img src="images/logo-final1.png" alt="Local-E"></a>
+                    <a href="home.html" title="Local-E"><img src="images/logo-final1.png" alt="Local-E"></a>
                   </div>
                 </div>
                 
