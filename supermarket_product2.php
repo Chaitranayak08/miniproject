@@ -29,6 +29,7 @@ session_start();
 </head>
 <style>.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-Q9KZND01P8"></script>
+<script src="product_search.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -65,7 +66,7 @@ session_start();
                     <form method="get" action="home.html/search">
                       <div id="sw_search" class="search">
                         <div class="content-search border">
-                          <input class="autosearch-input" type="text" value="" size="50" placeholder="Search by product..." name="search_keyword" id="search_keyword" required="" autocomplete="off" fdprocessedid="rqv00a" style="height: 20%;">	
+                          <input class="autosearch-input" type="text" value="" size="50" placeholder="Search by product..." name="search_keyword" id="search_keyword" required="" autocomplete="off" fdprocessedid="rqv00a" style="height: 20%;"onkeyup="search()">	
                           <span class="input-group-btn">
                             <button type="submit" class="fa fa-search button-search-pro form-button" fdprocessedid="usip3"></button>
                           </span>
